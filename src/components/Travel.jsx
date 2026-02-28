@@ -3,7 +3,7 @@ import CurvedLine from './CurvedLine'
 import { motion } from 'motion/react'
 const Travel = () => {
   return (
-    <div className='mb-10 mt-[-200px] relative' id="news">
+    <div className='mb-10 -mt-50 relative' id="news">
       <CurvedLine right={1} />
       <div className='relative grid grid-cols-1 md:grid-cols-2 gap-20'>
         <div>
@@ -31,7 +31,7 @@ const Travel = () => {
             maps around the world, recommended by thousands of mountain guides, trail rangers
             and other industry professionals.
           </p>
-          <button className='py-1 md:py-4 px-5 md:px-[40px] rounded-full cursor-pointer bg-[#ff791f] text-white'> Download the App </button>
+          <button className='py-1 md:py-4 px-5 md:px-10 rounded-full cursor-pointer bg-secondary dark:bg-secondary dark:text-black text-white'> Download the App </button>
         </motion.div>
       </div>
     </div>

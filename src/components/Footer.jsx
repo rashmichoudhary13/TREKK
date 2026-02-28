@@ -5,7 +5,7 @@ import { motion } from 'motion/react';
 const Footer = () => {
     return (
         <div id="review">
-            <div className='relative my-6'>
+            <div className='relative mt-6'>
                 <div className='w-full h-96 absolute rounded-3xl overflow-hidden'>
                     <motion.img 
                     initial={{
@@ -101,7 +101,7 @@ const Footer = () => {
             transition={{
                 duration: 1,
             }}
-            className=' my-4 md:mt-10 flex flex-col md:flex-row gap-5 md:justify-between text-gray-500'>
+            className=' mt-4 md:mt-10 py-3 flex flex-col md:flex-row gap-5 md:justify-between text-gray-500'>
                 <p>UI inspired by a Dribble Concept <br /> Fully implemented and animated by me</p>
 
                 <p>2025 TREKK, Inc. All rights reserved</p>

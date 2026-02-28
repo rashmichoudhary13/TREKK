@@ -12,9 +12,9 @@ const Guiding = ({ setScaleCursor }) => {
 
         const x = useTransform(scrollYProgress, [0, 1], ["0%", "-90%"]);
         return (
-            <section ref={targetRef} className='relative h-[200vh]'>
+            <section ref={targetRef} className='relative h-[150vh]'>
                 <div className='sticky top-0 h-screen overflow-hidden'>
-                    <motion.div style={{ x }} className='flex gap-8 py-4 md:py-16 w-max' onMouseEnter={() => setScaleCursor(3)} onMouseLeave={() => setScaleCursor(1)}>
+                    <motion.div style={{ x }} className='flex gap-8 py-4 md:py-16 w-max dark:text-black' onMouseEnter={() => setScaleCursor(3)} onMouseLeave={() => setScaleCursor(1)}>
                         {cardDetails.map((item) => (
                             <Card details={item} key={item.id} />
                         ))
@@ -46,7 +46,7 @@ const Guiding = ({ setScaleCursor }) => {
                     viewport={{
                         once: true,
                     }}
-                    className='text-3xl md:text-8xl font-bold md:tracking-tighter text-black'>OUR GUIDING VALUES</motion.h2>
+                    className='text-3xl md:text-8xl font-bold md:tracking-tighter text-black dark:text-white'>OUR GUIDING VALUES</motion.h2>
 
                 <motion.div
                      initial={{

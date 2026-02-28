@@ -14,7 +14,7 @@ function App() {
      <Cursor scale={scaleCursor}/>
      <Navbar setScaleCursor={setScaleCursor}/>
      <Hero/>
-     <div className="mx-3 md:m-6">
+     <div className="mx-3 md:mx-6">
        <Explore setScaleCursor={setScaleCursor}/>
        <Guiding setScaleCursor={setScaleCursor}/>
        <Travel/>

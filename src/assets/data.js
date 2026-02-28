@@ -35,4 +35,16 @@ export const cardDetails = [
         "title": "World Tours",
         "content": "Embark on a limitless journey across continents to stand before iconic wonders, embracing the diverse cultures and histories that define our world."
     },
+    {
+        "id": 7,
+        "image": "sacred-temple.avif",
+        "title": "Sacred Temples",
+        "content": "Discover ancient temples nestled among mountains, where centuries of devotion and peaceful surroundings create a deeply spiritual experience."
+    },
+    {
+        "id": 8,
+        "image": "waterfall.jpg",
+        "title": "Hidden Waterfalls",
+        "content": "Venture deep into untouched forests to uncover cascading waterfalls, where emerald surroundings create a refreshing escape from the ordinary."
+    },
 ]

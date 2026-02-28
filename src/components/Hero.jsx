@@ -37,11 +37,11 @@ const Hero = () => {
                     }}
                     className='flex-1 text-3xl md:text-[10rem] leading-none font-semibold'>
                     <h2>DISCOVER</h2>
-                    <h2 className='text-white md:text-[#ff791f]'>NEW TRAILS</h2>
+                    <h2 className='text-white md:text-secondary dark:text-secondary'>NEW TRAILS</h2>
                 </motion.div>
 
                 {/* Content  */}
-                <div className='w-80 md:w-97.5 flex flex-col items-center md:my-10 md:mx-10 md:text-2xl text-white md:text-black'>
+                <div className='w-80 md:w-97.5 flex flex-col items-center md:my-10 md:mx-10 md:text-2xl text-white md:text-black dark:text-white'>
                     <motion.p
                         initial={{
                             x: 500,
@@ -70,7 +70,7 @@ const Hero = () => {
                             delay: 1,
                             ease: "easeIn",
                         }}
-                        className='border-2 py-1 md:py-4 px-5 md:px-[140px] rounded-full cursor-pointer bg-[#ff791f] text-white'>
+                        className='border-2 py-1 md:py-4 px-5 md:px-35 rounded-full cursor-pointer bg-secondary dark:bg-secondary dark:text-black text-white'>
                         Start Now
                     </motion.button>
                 </div>

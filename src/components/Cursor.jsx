@@ -29,7 +29,7 @@ const Cursor = ({ scale = 1 }) => {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-6 h-6 rounded-full pointer-events-none z-[999]"
+      className="fixed top-0 left-0 w-6 h-6 rounded-full pointer-events-none z-999"
       style={{
         x: springX,
         y: springY,

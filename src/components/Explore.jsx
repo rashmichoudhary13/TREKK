@@ -23,7 +23,7 @@ const fadeUp = (delay) => {
 }
 const Explore = ({ setScaleCursor }) => {
     return (
-        <div id="travel">
+        <div id="explore">
             <motion.div
                 initial={{
                     opacity: 0,
@@ -67,7 +67,7 @@ const Explore = ({ setScaleCursor }) => {
                             viewport={{
                                 once: true,
                             }}
-                            className=' text-sm border-2 py-2 md:py-4 px-3 md:px-[140px] rounded-full cursor-pointer bg-[#ff791f] text-white'>
+                            className=' text-sm border-2 py-2 md:py-4 px-3 md:px-35 rounded-full cursor-pointer bg-secondary dark:bg-secondary dark:text-black text-white'>
                             Go to the Travel Guide
                         </motion.button>
                     </div>
