@@ -6,7 +6,9 @@ It is an website demonstrating animation using framer-motion
 - Horizontall Scroll Animation
 - Staggering Animation
 
+# Feature
 - Support Dark Mode
+- Mobile Responsive
 
 # ScrrenShot
 <img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/22ae2875-02f1-4f26-b422-9d9a3040c017" /><br> <br>
