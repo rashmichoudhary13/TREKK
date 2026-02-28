@@ -1,34 +1,43 @@
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { motion, useMotionValue, useSpring } from "framer-motion";
+import { useEffect } from "react";
 
-const Cursor = ({ scale = 1}) => {
-  const [pos, setPos] = useState({ x: 0, y: 0 });
-  
+const Cursor = ({ scale = 1 }) => {
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  const springX = useSpring(mouseX, {
+    stiffness: 500,
+    damping: 40,
+    mass: 0.5,
+  });
+
+  const springY = useSpring(mouseY, {
+    stiffness: 500,
+    damping: 40,
+    mass: 0.5,
+  });
+
   useEffect(() => {
     const move = (e) => {
-      setPos({ x: e.clientX, y: e.clientY });
+      mouseX.set(e.clientX - 12);
+      mouseY.set(e.clientY - 12);
     };
+
     window.addEventListener("mousemove", move);
     return () => window.removeEventListener("mousemove", move);
-  }, []);
+  }, [mouseX, mouseY]);
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-6 h-6 rounded-full pointer-events-none z-[9999]"
+      className="fixed top-0 left-0 w-6 h-6 rounded-full pointer-events-none z-[999]"
       style={{
+        x: springX,
+        y: springY,
         backgroundColor: "white",
         mixBlendMode: "difference",
       }}
-      animate={{
-        x: pos.x - 12,
-        y: pos.y - 12,
-        scale,
-      }}
-      transition={{
-        type: "spring",
-        stiffness: 300,
-        damping: 20,
-      }}
+      animate={{ scale }}
+      transition={{ duration: 0.3, ease: "easeOut"}}
     />
   );
 };

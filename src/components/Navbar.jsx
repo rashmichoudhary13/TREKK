@@ -50,7 +50,7 @@ const Navbar = ({ setScaleCursor }) => {
                 {/* Navigation item */}
                 <ul className='md:flex justify-around w-1/2 ml-8 hidden '>
                     {nav.map((item) => (
-                        <li className='text-2xl' key={item.title} onMouseEnter={() => setScaleCursor(3)} onMouseLeave={() => setScaleCursor(1)}>
+                        <li className='text-2xl' key={item.title} onMouseEnter={() => setScaleCursor(3)} onMouseLeave={() => setScaleCursor(2)}>
                             <a href={item.href}> {item.title} </a>
                         </li>
                     ))}

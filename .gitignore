@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#Problem faced: For cursor movement, first used useState to track the position of cursor but it gave jumpy vibe bcz of the rendering of the component on every state change.
+#Solution: used useMotionValue hook of framer motion
